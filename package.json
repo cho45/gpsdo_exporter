@@ -1,0 +1,19 @@
+{
+  "name": "gpsdo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "graph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asciichart": "^1.5.25",
+    "express": "^4.17.1",
+    "log4js": "^6.3.0",
+    "prom-client": "^13.1.0",
+    "serialport": "^9.2.0"
+  }
+}

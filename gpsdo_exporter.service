@@ -1,0 +1,14 @@
+[Unit]
+Description=GPSDO Prometheus Exporter
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/cho45/bin/node ./gpsdo_exporter.js
+ExecStop=/bin/kill -INT ${MAINPID}
+Restart=always
+WorkingDirectory=/home/cho45/gpsdo
+
+[Install]
+WantedBy=multi-user.target
+
